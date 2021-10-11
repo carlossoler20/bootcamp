@@ -1,0 +1,10 @@
+.slide{
+    margin-top: 10px;
+}
+.slide img{
+    height: 65vh;
+}
+.carousel-inner .item img{
+    height: 360px;
+    width: 640px;
+}
