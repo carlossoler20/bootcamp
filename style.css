@@ -8,3 +8,11 @@
     height: 360px;
     width: 640px;
 }
+.logo{
+    width: 70px;
+    height: 70px;
+    margin-right: 10px;
+}
+.principal{
+    width: 75%;
+}
