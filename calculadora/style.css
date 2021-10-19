@@ -30,6 +30,6 @@ h1{
 .btn-group{
     margin-left: 50px;
 }
-#mayuscula, #sumatoria, #calculadora{
+#caracteres, #sumatoria, #calculadora, #mayuscula{
     display: none;
 }

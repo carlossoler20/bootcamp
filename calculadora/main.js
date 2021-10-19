@@ -1,5 +1,34 @@
+function ocultar (){
+    var ocultar= document.getElementsByClassName("interfaz")
+    for (let i = 0; i < ocultar.length; i++) {
+        document.getElementsByClassName("interfaz")[i].style.display="none"
+    }
+}
+var boton1=document.getElementById("btn-mayuscula");
+boton1.addEventListener("click",function(){
+    ocultar();
+    var mayuscula= document.getElementById("mayuscula");
+    mayuscula.setAttribute('style','display:inline')
+})
+var boton2=document.getElementById("btn-letras");
+boton2.addEventListener("click",function(){
+    ocultar();
+    var caracteres= document.getElementById("caracteres");
+    caracteres.setAttribute('style','display:inline')
+})
+var boton3=document.getElementById("btn-calculadora");
+boton3.addEventListener("click",function(){
+    ocultar();
+    var calculadora= document.getElementById("calculadora");
+    calculadora.setAttribute('style','display:inline')
+})
+var boton4=document.getElementById("btn-sumatoria");
+boton4.addEventListener("click",function(){
+    ocultar();
+    var sumatoria= document.getElementById("sumatoria");
+    sumatoria.setAttribute('style','display:inline')
+})
 //Mayusculas y minusculas//
-
 function mayuscula() {
     var usuario = document.getElementById("conver").value;
     var userUper = usuario.toUpperCase();
