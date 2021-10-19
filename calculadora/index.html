@@ -34,19 +34,19 @@
   <!--======Display=======-->
   <!--====================-->
   <div id="pantalla">
-      <div id="sumatoria">
-        <h2>Sumatoria</h2>
-        <input id="input_sumatoria" type="text" placeholder="Ingrese un numero">
-        <button id="btn_sumatoria">Aplicar sumatoria</button>
-        <h3 id="res_sumatoria">resultado</h3>
-      </div>
       <div id="mayuscula">
-        <h2>Convertidor de mayusculas y minusculas</h2>
+        <h2 >Convertidor de mayusculas y minusculas</h2>
         <input id="conver" type="text" placeholder="Ingrese la palabra a convertir">
         <button id="convertir">Convertir</button>
         <h3 id="resultado_mayuscula">La palabra en mayuscula es: </h3>
         <h3 id="resultado_minuscula">La palabra en minuscula es: </h3>
       </div>
+      <di id="caracteres">
+        <h2>Contador de caracteres</h2>
+        <input id="input_caracteres" type="text" placeholder="Ingresa el texto a contar">
+        <button id="btn_caracteres">Contar</button>
+        <h3 id="resultado_carac">Resultado</h3>
+      </di>
       <div id="calculadora">
         <h2>Calculadora</h2>
         <input id="numb1" type="number" placeholder="Ingrese el primer numero">
@@ -55,11 +55,17 @@
           <div class="btn-group me-2" role="group" aria-label="First group">
             <button id="btn_suma" type="button" class="btn btn-primary">Sumar</button>
             <button id="btn_resta" type="button" class="btn btn-primary">Restar</button>
-            <button id="btn-multiplicacion" type="button" class="btn btn-primary">Multiplicar</button>
+            <button id="btn_multiplicacion" type="button" class="btn btn-primary">Multiplicar</button>
             <button id="btn_division" type="button" class="btn btn-primary">Dividir</button>
           </div>
         </div>
         <h3 id="resultado_cal">resultado</h3>
+      </div>
+      <div id="sumatoria">
+        <h2>Sumatoria</h2>
+        <input id="input_sumatoria" type="text" placeholder="Ingrese un numero">
+        <button id="btn_sumatoria">Aplicar sumatoria</button>
+        <h3 id="res_sumatoria">resultado</h3>
       </div>
   </div>
   <script src="main.js"></script>

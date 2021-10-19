@@ -16,6 +16,20 @@ h1{
 #btn-sumatoria{
     background-color: rgb(8, 48, 48);
 }
-/* .btn-primary{
-    width: 60%;
-} */
+#pantalla{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    text-align: center;
+}
+#pantalla .btn{
+    margin: 20px 0;
+    border: rgb(82, 68, 62) solid 1px;
+    align-items: center;
+}
+.btn-group{
+    margin-left: 50px;
+}
+#mayuscula, #sumatoria, #calculadora{
+    display: none;
+}
