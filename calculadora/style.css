@@ -1,0 +1,21 @@
+body{
+    background-color: lightgreen;
+}
+#botonera{
+    background-color: rgb(180, 207, 216);
+}
+#pantalla{
+    background-color: lightgreen;
+}
+h1{
+    text-align: center;
+}
+#btn-letras{
+    background-color: rgb(114, 30, 55);
+}
+#btn-sumatoria{
+    background-color: rgb(8, 48, 48);
+}
+/* .btn-primary{
+    width: 60%;
+} */
