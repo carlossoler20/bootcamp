@@ -26,11 +26,13 @@
         <div class="mb-3">
           <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
             placeholder="Correo electronico o número teléfono">
+            <span id="error">Correo o contraseña invalida</span>
         </div>
         <div class="mb-3">
           <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Contraseña">
         </div>
         <button id="btn-inicio" type="submit" class="btn btn-primary">Iniciar sesión</button>
+        <span id="exitoso">Bienvenido</span>
         <div class="mb-3 form-check">
           <label class="form-check-label" for="exampleCheck1">¿Olvidaste tu contraseña?</label>
         </div>
@@ -39,8 +41,32 @@
         <p><strong>Crea una página</strong> para una celebridad, una marca o un negocio.</p>
       </form>
     </div>
-  </div
-     
+  </div>
+     <!--====================-->
+     <!--=======Registro=====-->
+     <!--====================-->
+    <div id="registro">
+       <form>
+        <div class="mb-3">
+          <label for="nombre" class="form-label">Ingresa tu nombre completo</label>
+          <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+        </div>
+        <div class="mb-3">
+          <label for="correoRegistro" class="form-label">Ingresa un correo</label>
+          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+          <div id="emailHelp" class="form-text">Nunca compartiremos su correo electrónico con nadie más. </div>
+        </div>
+        <div class="mb-3">
+          <label for="passwordRegistro" class="form-label">Ingresa una contraseña</label>
+          <input type="password" class="form-control" id="exampleInputPassword1">
+        </div>
+        <div class="mb-3 form-check">
+          <input type="checkbox" class="form-check-input" id="exampleCheck1">
+          <label class="form-check-label" for="exampleCheck1">Aceptas terminos y condiciones</label>
+        </div>
+        <button type="submit" class="btn btn-primary">Registrar</button>
+      </form>
+    </div>
   <!--Bootstrap Bundle with Popper-->
     <!--====================-->
 
