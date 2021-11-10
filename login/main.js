@@ -3,13 +3,15 @@ $(document).ready(function () {
     var password = [123456, 654321];
     var email;
     var pass;
-    
+    var a;
+    var b;
 
     function validarCorreo() {
         email = $("#exampleInputEmail1").val();
         if ((email == correo[0]) || (email == correo[1])) {
             alert("Es verdadero")
-            return true;
+            a=true
+            return a;
         }
         else {
             alert("Es falso")
@@ -21,20 +23,22 @@ $(document).ready(function () {
         pass = $("#exampleInputPassword1").val();
         if ((pass == password[0]) || (pass == password[1])) {
             alert("Es verdadero")
-            return true;
+            b=true;
+            return b;
         }
         else {
             alert("Es falso")
             return false;
         }
     }
-
-    function valido(){
-        if((validarCorreo==true) && (validarPass=true)){
+        function valido(){
+        if(a==true && b==true){
             alert("Bienvenido")
+            return;
         }
         else{
             alert("Correo o Contraseña incorrecta")
+            return;
         }
     }
     $("#btn-inicio").click(function () {
