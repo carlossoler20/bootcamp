@@ -1,0 +1,53 @@
+body{
+    background-color: #f0f2f5;
+}
+#first{
+    text-align: left;
+    margin-top: 100px;
+}
+
+#second{
+    background-color: #ffffff;
+    height: 30%;
+    width: 10px;
+    margin-right: 100px;
+    margin-top: 200px;
+    padding-top: 50px;
+    border-radius: 10px;
+}
+
+.centrar{
+    margin: 50px;
+}
+.centrar h2{
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left: 44px;
+}
+
+.form-check-label{
+    color: #1877f2;
+}
+.form-check-label:hover{
+    text-decoration: underline;
+}
+#btn-inicio{
+background-color: #1877f2; 
+}
+#btn-inicio:hover{
+    background-color: #1468d6;
+}
+#btn-crear{
+    background-color: #42b72a;
+    color: white;
+}
+#btn-crear:hover{
+    background-color: #3aa025;
+}
+/* #principal{
+    background-color: #f0f2f5;
+    background-color: ;
+    margin: 500px;
+}
+#exampleCheck1{
+    margin-left: 20px;
+} */
