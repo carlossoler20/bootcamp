@@ -1,0 +1,23 @@
+<%- include ('partials/header'); %>
+
+<form action="guardarNuevoCliente" method="post">
+    <input type="text" placeholder="Nombre" name="nombre" />
+    <input type="text" placeholder="Apellido" name="apellido" />
+    <input type="text" placeholder="E-mail" name="email" />
+    <input type="text" placeholder="Télefono" name="tel" />
+    <input type="text" placeholder="País" name="pais" />
+    <input type="text" placeholder="Ciudad" name="ciudad" />
+    <input type="text" placeholder="Dirección" name="direccion" />
+    <input type="text" placeholder="Instagram" name="instagram" />
+    <input type="text" placeholder="Facebook" name="facebook" />
+    <input type="text" placeholder="Linkedin" name="linkedin" />
+    <input type="text" placeholder="Twitter" name="twitter" />
+    <select name="estado" id="estado">
+        <option value="Interesado">Interesado</option>
+        <option value="Presupuesto enviado">Presupuesto enviado</option>
+        <option value="Cliente">Cliente</option>
+        <option value="Cliente recurrente"> Cliente recurrente</option>
+        <option value="No Cliente">No Cliente</option>
+      </select>
+    <button type="submit">Enviar</button>
+</form>

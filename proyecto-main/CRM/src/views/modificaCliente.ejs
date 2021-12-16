@@ -1,0 +1,42 @@
+<%- include ('partials/header'); %>
+<head>
+   <script src="https://code.jquery.com/jquery-3.5.0.js"></script> 
+</head>
+
+<h1>
+   <em>
+    Módulo de modificación de Clientes CRM
+   </em>
+   <form action="/guardarModCliente/<%= personaEncontrada.id %>" method="post">
+      <input id="nombre" type="text" disabled placeholder="Nombre" name="nombre" value="<%= personaEncontrada.nombre %>"/>
+      <input id="apellido" type="text" disabled placeholder="Apellido" name="apellido" value="<%= personaEncontrada.apellido %>"/>
+      <input class="oculto" type="text" placeholder="E-mail" name="email" value="<%= personaEncontrada.email %>"/>
+      <input class="oculto" type="text" placeholder="Télefono" name="tel" value="<%= personaEncontrada.tel %>"/>
+      <input class="oculto" type="text" placeholder="País" name="pais" value="<%= personaEncontrada.pais %>"/>
+      <input class="oculto" type="text" placeholder="Ciudad" name="ciudad" value="<%= personaEncontrada.ciudad %>"/>
+      <input class="oculto" type="text" placeholder="Dirección" name="direccion" value="<%= personaEncontrada.direccion %>"/>
+      <input class="oculto" type="text" placeholder="Instagram" name="instagram" value="<%= personaEncontrada.instagram %>"/>
+      <input class="oculto" type="text" placeholder="Facebook" name="facebook" value="<%= personaEncontrada.facebook %>"/>
+      <input class="oculto" type="text" placeholder="Linkedin" name="linkedin" value="<%= personaEncontrada.linkedin %>"/>
+      <input class="oculto" type="text" placeholder="Twitter" name="twitter" value="<%= personaEncontrada.twitter %>"/>
+      <select class="oculto" name="estado" id="estado">
+
+         <option value="Interesado" <% if (personaEncontrada.estado == 'Interesado') { %> selected <% } %> >Interesado</option>
+         <option value="Presupuesto enviado" <% if (personaEncontrada.estado == 'Presupuesto enviado') { %> selected <% } %> >Presupuesto enviado</option>
+         <option value="Cliente" <% if (personaEncontrada.estado == 'Cliente') { %> selected <% } %> >Cliente</option>
+         <option value="Cliente recurrente" <% if (personaEncontrada.estado == 'Cliente recurrente') { %> selected <% } %> > Cliente recurrente</option>
+         <option value="No Cliente" <% if (personaEncontrada.estado == 'No Cliente') { %> selected <% } %> >No Cliente</option>
+       </select>
+       <button class="oculto" id="guardar" type="submit">Guardar</button>
+      
+  </form>
+      <button id="ModTodo">Modificar Todo</button>
+      <button id="ModEst">Modificar Estado</button>
+      <a class="active" href="javascript:history.back()"> Volver Atrás</a>
+      
+
+  <script src="/habilitarFormulario.js"></script>
+  <link REL=StyleSheet HREF="./estilos/stilos.css" TYPE="text/css" MEDIA=screen>
+   
+</h1>
+
